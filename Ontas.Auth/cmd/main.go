@@ -21,6 +21,8 @@ func main() {
 		log.Fatalln("Failed at config", err)
 	}
 
+	db.InitDataMogno(c.MongoUri)
+
 	h := db.Init(c.DBUrl)
 
 	jwt := utils.JwtWrapper{

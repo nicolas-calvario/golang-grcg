@@ -3,9 +3,11 @@ package db
 import (
 	"log"
 
-	"Ontas.Auth/pkg/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
+
+	"Ontas.Auth/pkg/models"
+
 )
 
 type Handler struct {
